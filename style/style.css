@@ -1,0 +1,23 @@
+main{
+  min-height: calc(100%-320px);
+}
+
+header{
+  background-image: url("../images/header-background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute; 
+  /* width: 100%; 
+  height: auto; */
+}
+
+.promo{
+  background-image: url("../images/section-promo-background.png")
+}
+
+.inner-container{
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  height: auto;
+}
