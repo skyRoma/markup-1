@@ -22,19 +22,33 @@
   font-family: 'OpenSans bold';
   src: url("../fonts/open-sans/OpenSans-Bold.ttf") format('truetype');
 }
+body{
+  
+}
 
 header{
   background-image: url("../images/header-background.png");
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  min-width: 1255px;
+  height: 159px;
   position: absolute;  
   z-index: 10;
 }
 
+.promo{
+  background-image: url("../images/section-promo-background.png");
+  background-size: 100% 100%;
+  width: 100%;
+  min-width: 1255px;
+  height: 1067px;
+}
+
+
+
 .inner-container{
-  max-width: 1250px;
+  max-width: 1255px;
   margin: 0 auto;
   height: auto;
 } 
@@ -54,6 +68,7 @@ nav{
   font-family: 'Gentium Basic', serif;
   font-size: 21px;
   margin: 50px 0;
+  min-width: 800px; 
   }
  
   
@@ -61,13 +76,19 @@ a{
   text-decoration: none;
 }
 
-nav>a{
+
+nav>ul>li>a{
     color: white;
     margin-left: 50px;
+    display: inline-block;
 }
 
-nav>a:first-child{
-  margin-left: 240px;
+ul li{
+  display: inline-block;
+}
+
+nav>ul>li:first-child{
+  margin-left: 190px;
 }
 
 .social{
@@ -82,14 +103,10 @@ nav>a:first-child{
 }
 
 main{
-  min-height: calc(100%-320px);
+  min-height: calc(100vh-320px);
 }
   
 
-.promo{
-  background: url(../images/section-promo-background.png) no-repeat center;
-  background-size: 100% 100%;
-}
 
 
 
