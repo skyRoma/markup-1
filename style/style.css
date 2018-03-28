@@ -26,6 +26,12 @@ body{
   background-image: url("../images/pattern1.png");
 }
 
+.inner-container{
+  max-width: 1250px;
+  margin: 0 auto;
+  height: auto;
+} 
+
 header{
   background: linear-gradient(to bottom, #050505b3, #ffffff00);
   width: 100%;
@@ -35,6 +41,72 @@ header{
   position: fixed;  
   z-index: 10;
 }
+
+.header-content-wrapper{
+  float: right;
+}
+
+
+.inner-container.content-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.logo{
+  display: inline-block;
+  font-family: 'Yeseva One', cursive;
+  color: white;
+  font-size: 36px;
+  margin-left: 3px;
+  margin-top: 43px;
+}
+
+
+nav{
+  display: inline-block;
+  font-family: 'Gentium Basic', serif;
+  font-size: 21px;
+  margin-left: 191px;
+  min-width: 759px; 
+  position: relative;
+  bottom: 6px;
+  }
+ 
+  
+a{
+  text-decoration: none;
+}
+
+
+ul li{
+  display: inline-block;
+}
+
+nav>ul>li>a{
+  color: white;
+  margin-left: 45.5px;
+  display: inline-block;
+  padding-top: 49px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav>ul>li>a:hover{
+  border-top: 2px solid white;
+}
+
+.social{  
+  display: inline-block;
+  margin: 50px 0;
+}
+
+.social>a{
+  margin-left: 13px;
+}
+
 
 .promo{
   background-image: url("../images/section-promo-background.png");
@@ -50,14 +122,6 @@ header{
   margin: 0 auto;
   /* align-content: center;  */
   /* justify-content: center; */
-}
-
-.inner-container.content-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
 }
 
 h2{
@@ -84,7 +148,7 @@ h2{
    display: block;
    content: url("../images/section-promo-content-divider.png");
    margin-top: 6px;
-   margin-left: 7px;
+   margin-left: 6px;
  } 
 
 
@@ -96,7 +160,7 @@ h2{
  .section-promo-button{
    display: inline-block;
    border: 2px solid black;
-   padding: 18px 49px;
+   padding: 19px 50px;
    color: white;
    font-family: "Lato Regular";
    font-size: 18px;
@@ -119,71 +183,28 @@ h2{
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.2);
   margin-left: 6px;
+  cursor: pointer;
  }
 
  .section-promo-button:last-child:hover{
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.2);
   margin-left: 25px;
+  cursor: pointer;
  }
 
 
-.inner-container{
-  max-width: 1250px;
-  margin: 0 auto;
-  height: auto;
-} 
+.about{
+  width: 100%;
+  min-width: 1600px;
+  height: 710px;
+}
 
-.logo{
-  display: inline-block;
-  font-family: 'Yeseva One', cursive;
-  color: white;
+.about h3{
+  color: #cc9900;
+  font-family: 'Yeseva One';
   font-size: 36px;
-  margin-left: 3px;
-  margin-top: 43px;
-}
-
-
-nav{
-  display: inline-block;
-  font-family: 'Gentium Basic', serif;
-  font-size: 21px;
-  margin-left: 191px;
-  min-width: 759px; 
   }
- 
-  
-a{
-  text-decoration: none;
-}
-
-
-nav>ul>li>a{
-    color: white;
-    margin-left: 45.5px;
-    display: inline-block;
-}
-
-
-ul li{
-  display: inline-block;
-}
-
-.social{
-  margin: 50px 0;
-}
-
-.social>a{
-  margin-left: 13px;
-}
-
-.social{  
-  display: inline-block;
-}
-
-.header-content-wrapper{
-  float: right;
-}
 
 main{
   min-height: calc(100vh-320px);
