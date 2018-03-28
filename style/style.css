@@ -27,11 +27,10 @@ body{
 }
 
 header{
-  background-image: url("../images/header-background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, #05050547, #ffffff00);
   width: 100%;
-  min-width: 1255px;
+  /* min-width: 1255px; */
+  min-width: 1600px;
   height: 159px;
   position: fixed;  
   z-index: 10;
@@ -41,7 +40,8 @@ header{
   background-image: url("../images/section-promo-background.png");
   background-size: 100% 100%;
   width: 100%;
-  min-width: 1255px;
+  /* min-width: 1255px; */
+  min-width: 1600px;
   height: 750px;
   display: flex;
   align-items: center;
@@ -63,6 +63,8 @@ h2{
   color: white;
   width: 970px;
   text-align: center;
+  margin-top: 34px;
+  margin-right: 22px;
   }
 
  h2::after{
@@ -106,7 +108,7 @@ h2{
   color: white;
   font-size: 36px;
   margin-left: 5px;
-  margin-top: 48px;
+  margin-top: 43px;
 }
 
 
@@ -114,7 +116,7 @@ nav{
   display: inline-block;
   font-family: 'Gentium Basic', serif;
   font-size: 21px;
-  margin: 50px 0 50px 180px;
+  margin: 50px 0 50px 187px;
   min-width: 800px; 
   }
  
