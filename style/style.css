@@ -105,11 +105,6 @@ nav>ul>li>a:hover{
 
 .social{  
   display: inline-block;
-  margin: 50px 0;
-}
-
-.social>a{
-  margin-left: 13px;
 }
 
 
@@ -377,14 +372,23 @@ main{
 }
   
 
-
 .social>a {
-  width: 81px; height: 21px;
-  background: url(../images/css_sprites.png) -10px -10px;
+    width: 33px;
+    height: 21px;
+    display: inline-block;
+    background: url(../images/css_sprites.png) -10px no-repeat;
 }
 
 .social a:nth-child(1) {
-  background-position: -41px;
+  background-position: 2px;
+}
+
+.social a:nth-child(2) {
+  background-position: -38px -12px;
+}
+
+.social a:nth-child(3) {
+  background-position: -72px;
 }
 /* 
 .bg-header_social_icons {
