@@ -335,6 +335,45 @@ h2{
   height: 994px;
  }
 
+ .reviews{
+  background-image: url("../images/section-reviews-background.png");
+  background-size: 100% 100%;
+  width: 100%;
+  min-width: 1600px;
+  height: 758px;
+ }
+
+ .reviews-content{
+  width: 770px;
+  height: 557px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+ }
+ .reviews h3{
+  font-family: 'Yeseva One';
+  font-size: 36.4px;
+  color: white;
+ }
+
+ .reviews h3::after{
+  display: block;
+  content: url(../images/section-ingredients&reviews-divider.png);
+
+} 
+
+.reviews blockquote{
+  width: 590px;
+  font-size: 23px;
+  font-family: 'Gentium Basic';
+  text-align: center;
+  line-height: 45px;
+  color: white;
+}
+
+.reviews cite{
+font-family: 'Lato Regular';
+color: white;
+}
 main{
   min-height: calc(100vh-320px);
 }
