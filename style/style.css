@@ -26,6 +26,11 @@ body{
   background-image: url("../images/pattern1.png");
 }
 
+.wrapper{
+  width: 1600px;
+  margin: 0 auto;
+}
+
 .inner-container{
   max-width: 1250px;
   margin: 0 auto;
@@ -36,7 +41,7 @@ header{
   background: linear-gradient(to bottom, #050505b3, #ffffff00);
   width: 100%;
   /* min-width: 1255px; */
-  min-width: 1600px;
+  width: 1600px; 
   height: 159px;
   position: fixed;  
   z-index: 10;
@@ -111,17 +116,13 @@ nav>ul>li>a:hover{
 .promo{
   background-image: url("../images/section-promo-background.png");
   background-size: 100% 100%;
-  width: 100%;
-  /* min-width: 1255px; */
-  min-width: 1600px;
-  /* width: 1600px; */
+  /* width: 100%; */
+  /* min-width: 1600px; */
   height: 750px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  /* align-content: center;  */
-  /* justify-content: center; */
+  /* margin: 0 auto; */
 }
 
 h2{
@@ -195,8 +196,8 @@ h2{
 
 
 .about{
-  width: 100%;
-  min-width: 1600px;
+  /* width: 100%; */
+  /* min-width: 1600px; */
   height: 710px;
 }
 
@@ -253,13 +254,10 @@ h2{
  .ingredients{
   background-image: url("../images/section-ingredients-background.png");
   background-size: 100%;
-  width: 100%;
-  min-width: 1600px;
+  /* width: 100%; */
+  /* min-width: 1600px; */
   height: 758px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto; */
+  
  }
 
 
@@ -330,16 +328,16 @@ h2{
 .menu{
   background-image: url("../images/pattern2.png");
   /* background-size: 100%; */
-  width: 100%;
-  min-width: 1600px;
+  /* width: 100%; */
+  /* min-width: 1600px; */
   height: 994px;
  }
 
  .reviews{
   background-image: url("../images/section-reviews-background.png");
   background-size: 100% 100%;
-  width: 100%;
-  min-width: 1600px;
+  /* width: 100%; */
+  /* min-width: 1600px; */
   height: 758px;
  }
 
@@ -380,5 +378,17 @@ main{
   
 
 
+.social>a {
+  width: 81px; height: 21px;
+  background: url(../images/css_sprites.png) -10px -10px;
+}
 
+.social a:nth-child(1) {
+  background-position: -41px;
+}
+/* 
+.bg-header_social_icons {
+  width: 81px; height: 21px;
+  background: url('css_sprites.png') -10px -10px;
+} */
 
