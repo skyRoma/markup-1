@@ -360,17 +360,17 @@ h2{
 
 .menu{
   background-image: url("../images/pattern2.png");
-  /* background-size: 100%; */
-  /* width: 100%; */
-  /* min-width: 1600px; */
   height: 994px;
+  display: flex;
+  align-items: center;
  }
 
  .menu .inner-container{
-   display: flex;
-   justify-content: space-around;
-   width: 1100px;
-   overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  overflow: hidden;
+  margin-right: 201px;
  }
 
  .menu h3{
@@ -383,14 +383,62 @@ h2{
 
   .menu h3::after{
     display: block;
-    content: url("../images/section-about-content-divider.png");
-    
+    content: url(../images/section-about-content-divider.png);
+    margin-top: 12px;
+    position: relative;
+    top: -1px;
+    left: -1px;
   } 
 
   .menu-column{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 17px;
+  }
+
+  .menu-column:first-child{
+    position: relative;
+  }
+
+  .dish{
+    margin-top: 24px;
+  }
+
+  .dish-name{
+    word-spacing: 2px;
+    width: 432px;
+    display: flex;
+    justify-content: space-between;
+    color: #c89f2d;
+    font-family: 'Yeseva One';
+    font-size: 21px;
+    border-bottom: 1px solid rgba(200, 159, 45, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+  }
+
+  .dish-name + div{
+    font-family: 'Lato Regular';
+    font-size: 16px;
+    word-spacing: -1.9px;
+    letter-spacing: 0.2px;
+  }
+
+  /* .dish:nth-child(){
+    color:green;
+  } */
+
+  .menu-item .dish~.dish{
+    margin-top: 39px;
+  }
+
+  .menu-item~.menu-item{
+    margin-top: 66px;
+  }
+
+  .special{
+    border: 1px solid #c89f2d; 
   }
 
  .reviews{
@@ -406,7 +454,7 @@ h2{
  .reviews-content{
   width: 770px;
   height: 556px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.78);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -427,12 +475,12 @@ h2{
 } 
 
 .reviews blockquote{
-  width: 642px;
+  width: 711px;
   font-size: 25px;
   font-family: 'Gentium Basic';
   text-align: center;
   line-height: 45px;
-  color: white;
+  color: rgb(194,196,195);
   margin-top: -2px;
 }
 
@@ -440,7 +488,7 @@ h2{
     font-size: 80px;
     position: relative;
     top: 21px;
-    right: 41px;
+    right: 33px;
 }
 
 .reviews cite{
@@ -454,7 +502,58 @@ h2{
 
 .reservations{
   height: 710px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.reservations .inner-container{
+  height: 507px;
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservations-figure-wrapper{
+  margin-top: -2px;
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservations-content{
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservations-content h3{
+  text-align: center;
+  color: #cc9900;
+  font-family: 'Yeseva One';
+  font-size: 36.5px;
+  letter-spacing: -0.2px;
+  }
+
+  .reservations-content h3::after{
+    display: block;
+    content: url("../images/section-about-content-divider.png");
+    margin-top: 11px;
+    /* margin-left: 47px; */
+  } 
+
+
+  .reservations-content article{
+    text-align: center;
+    width: 430px;
+    font-family: 'Lato Regular';
+    font-size: 15.5px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-left: 0px;
+    letter-spacing: 0.09px;
+  }  
 
 footer{
   height: 320px;
@@ -485,6 +584,15 @@ footer h4{
   margin-top: 59px;
 }
 
+footer article:nth-child(n+2) h4,
+footer article:nth-child(n+2) p{
+  margin-left: 2px;
+}
+
+footer article:nth-child(n+2) h4::after{
+  margin-right: 1px;
+} 
+
 footer h4::after{
   display: block;
   content: url("../images/footer-divider.png");
@@ -498,6 +606,10 @@ footer p{
   font-size: 16px;
   color: white;
   text-align: center;
+}
+
+footer p span{
+  font-family: 'OpenSans bold';
 }
 
 
