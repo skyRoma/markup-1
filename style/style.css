@@ -451,6 +451,56 @@ h2{
   font-size: 18px;
   word-spacing: -1px;
 }
+
+.reservations{
+  height: 710px;
+}
+
+footer{
+  height: 320px;
+  background-color: rgb(25,25,25);
+  
+}
+
+.footer-container{
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer article{
+  width: 370px;
+}
+
+footer article:first-child h4::after{
+margin-left: -2px;
+}
+
+footer h4{
+  font-family: 'Yeseva One';
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  margin-top: 59px;
+}
+
+footer h4::after{
+  display: block;
+  content: url("../images/footer-divider.png");
+  margin-top: 17px;
+}
+
+footer p{
+  margin-top: 14px;
+  line-height: 24px;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+
 main{
   min-height: calc(100vh-320px);
 }
