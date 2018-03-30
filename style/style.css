@@ -23,7 +23,7 @@
   src: url("../fonts/open-sans/OpenSans-Bold.ttf") format('truetype');
 }
 body{
-  background-image: url("../images/pattern1.png");
+  background-image: url("../images/pattern1.jpg");
 }
 
 .wrapper{
@@ -359,7 +359,7 @@ h2{
 
 
 .menu{
-  background-image: url("../images/pattern2.png");
+  background-image: url("../images/pattern2.jpg");
   height: 994px;
   display: flex;
   align-items: center;
