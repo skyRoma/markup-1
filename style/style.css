@@ -107,6 +107,25 @@ nav>ul>li>a:hover{
   display: inline-block;
 }
 
+.social>a {
+  width: 33px;
+  height: 21px;
+  display: inline-block;
+  background: url(../images/css_sprites.png) -10px no-repeat;
+}
+
+.social a:nth-child(1) {
+background-position: 2px;
+}
+
+.social a:nth-child(2) {
+background-position: -38px -12px;
+}
+
+.social a:nth-child(3) {
+background-position: -72px;
+}
+
 
 .promo{
   background-image: url("../images/section-promo-background.png");
@@ -221,7 +240,7 @@ h2{
     display: block;
     content: url("../images/section-about-content-divider.png");
     margin-top: 11px;
-    margin-left: 47px;
+    margin-left: 47px; /* ATANTION text-align in*/
   } 
 
   .about-content article{
@@ -313,10 +332,32 @@ h2{
 
  }
 
- .ingredients figure{
+ .ingredients figure:nth-child(1){
   background-image: url("../images/section-ingredients-image1.png");
   width: 100px;
   height: 100px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-position: -43px -33px;
+}
+
+.ingredients figure:nth-child(2){
+  background-image: url(../images/section-ingredients-image2.png);
+  width: 100px;
+  height: 100px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-position: -42px -89px;
+
+}
+
+.ingredients figure:nth-child(3){
+  background-image: url("../images/section-ingredients-image3.png");
+  width: 100px;
+  height: 100px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-position: -46px -20px;
 }
 
 
@@ -327,6 +368,33 @@ h2{
   /* min-width: 1600px; */
   height: 994px;
  }
+
+ .menu .inner-container{
+   display: flex;
+   justify-content: space-around;
+   width: 1100px;
+   overflow: hidden;
+ }
+
+ .menu h3{
+   text-align: center;
+  color: #cc9900;
+  font-family: 'Yeseva One';
+  font-size: 36.5px;
+  letter-spacing: -0.2px;
+  }
+
+  .menu h3::after{
+    display: block;
+    content: url("../images/section-about-content-divider.png");
+    
+  } 
+
+  .menu-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
  .reviews{
   background-image: url("../images/section-reviews-background.png");
@@ -372,24 +440,7 @@ main{
 }
   
 
-.social>a {
-    width: 33px;
-    height: 21px;
-    display: inline-block;
-    background: url(../images/css_sprites.png) -10px no-repeat;
-}
 
-.social a:nth-child(1) {
-  background-position: 2px;
-}
-
-.social a:nth-child(2) {
-  background-position: -38px -12px;
-}
-
-.social a:nth-child(3) {
-  background-position: -72px;
-}
 /* 
 .bg-header_social_icons {
   width: 81px; height: 21px;
