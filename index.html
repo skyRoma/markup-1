@@ -11,6 +11,7 @@
 	<div class="wrapper">
 	<header>
 		<div class="inner-container">
+		<h1>Lambda restaurant</h1>
 		<span class="logo">LAMBDA</span>
 		<nav>
 			<ul>			
@@ -31,7 +32,6 @@
 	</header>
 	<main>
 			<section class="promo">
-				<!-- <div class="inner-container content-wrapper"> -->
 					<h2>
 						the right ingredients<br />
 						for the right food
@@ -40,7 +40,6 @@
 						<div class="section-promo-button">BOOK A TABLE</div>
 						<div class="section-promo-button">SEE THE MENU</div>
 					</div>	
-				<!-- </div> -->
 			</section>
 			<section class="about">
 					<div class="inner-container">
@@ -217,20 +216,27 @@
 									us hard to resist! Stop in today and check us out! Perfect
 									materials and freshly baked food.
 								</p>
-							</article>
+							</article>						
 							<form class="section-reviews-form">
-								<lavel for="text">Name</lavel>
-								<input type="text" name="text" id="text">
-								<lavel for="text">Date</lavel>
-								<input type="date" name="date" id="date"/>
-								<lavel for="text">Email</lavel>
-								<input type="email" name="email" id="email"/>
-								<lavel for="text">Party number</lavel>
-								<input type="number" min="1"  name="party-number"/>
-							</form>
+								<div class="fieldset-input">
+									<div class="fieldset-column">
+										<label for="text">Name</label>
+										<input type="text" placeholder="your name *" name="text" id="text" required/>
+										<label for="date">Date</label>
+										<input type="date" placeholder="date *" name="date" id="date" required/>
+									</div>	
+									<div class="fieldset-column">
+										<label for="email">Email</label>
+										<input type="email" placeholder="your email *" name="email" id="email" required/>
+										<label for="party-number">Party number</label>
+										<input type="number" placeholder="party number" min="1"  name="party-number"/>
+									</div>
+								</div>								
+								<button>Book now!</button>
+								</form>
+							</div>
 						</div>
-						</div>
-			</section>
+					</section>
 	</main>
 	<footer>
 		<div class="footer-container">

@@ -37,6 +37,10 @@ body{
   height: auto;
 } 
 
+h1{
+  display: none;
+}
+
 header{
   background: linear-gradient(to bottom, #050505b3, #ffffff00);
   width: 100%;
@@ -541,6 +545,77 @@ h2{
   .reservations-content p:last-child{
     margin-top: 10px;
   }
+
+  .section-reviews-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 41px;
+    align-items: center;
+  }
+
+  .fieldset-input{
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fieldset-column input+label {
+    margin-top: 27px;
+}
+
+
+ 
+ form label{
+  display: block;
+  color: #c9a131;
+  font-family: 'OpenSans bold';
+  font-size: 14px;
+ }
+
+ form input{
+  width: 185px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.41);
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: gray;
+  border: 1px solid #c8c6c6;
+  margin-top: 8px;
+  padding-left: 13px;
+  letter-spacing: -0.5px;
+ }
+
+ .fieldset-column input:last-child {
+  height: 34px;
+  margin-top: 6px;
+  width: 185px;
+}
+
+.fieldset-column:last-child input:last-child{
+height: 32px;
+}
+
+label[for="party-number"]{
+  margin-left: -1px;
+  }
+
+::-webkit-input-placeholder {margin-left:1px; }
+::-moz-placeholder          {color:#c0392b;}
+:-ms-input-placeholder      {color:#c0392b;}
+
+ form button{
+  background-color: #c9a131;
+  color: white;
+  width: 200px;
+  height: 36px;
+  margin-top: 33px;
+  margin-left: 1px;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  padding-left: 9.5px;
+  border: 0px;
+ }
 
 footer{
   height: 320px;
