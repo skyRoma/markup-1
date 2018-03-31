@@ -252,6 +252,8 @@ h2{
     margin-top: 20px;
     margin-left: 0px;
     letter-spacing: 0.09px;
+    height: 120px;
+    overflow: hidden;
   }  
 
  .about-content article+figure{
@@ -308,14 +310,16 @@ h2{
   } 
 
  .ingredients article{
-  width: 418px;
-  font-family: 'Lato Regular';
-  font-size: 16px;
-  text-align: center;
-  margin-top: 18px;
-  line-height: 24px;
-  word-spacing: 0.6px;
-  letter-spacing: -0.3px;
+    width: 418px;
+    font-family: 'Lato Regular';
+    font-size: 16px;
+    text-align: center;
+    margin-top: 18px;
+    line-height: 24px;
+    word-spacing: 0.6px;
+    letter-spacing: -0.3px;
+    height: 120px;
+    overflow: hidden;
  }
 
  
@@ -468,6 +472,8 @@ h2{
   line-height: 45px;
   color: rgb(194,196,195);
   margin-top: -2px;
+  height: 241px;
+  overflow: hidden;
 }
 
 .reviews blockquote span{
@@ -533,7 +539,9 @@ h2{
 
   .reservations-content article{
     text-align: center;
+    overflow: hidden;
     width: 430px;
+    height: 150px;
     font-family: 'Lato Regular';
     font-size: 15.5px;
     line-height: 24px;
@@ -549,7 +557,7 @@ h2{
   .section-reviews-form{
     display: flex;
     flex-direction: column;
-    margin-top: 41px;
+    margin-top: 45px;
     align-items: center;
   }
 
@@ -644,6 +652,11 @@ footer h4{
   color: white;
   text-align: center;
   margin-top: 59px;
+}
+
+footer article:first-child p{
+  height: 120px;
+  overflow: hidden;
 }
 
 footer article:nth-child(n+2) h4,
