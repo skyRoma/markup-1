@@ -40,7 +40,6 @@ body{
 header{
   background: linear-gradient(to bottom, #050505b3, #ffffff00);
   width: 100%;
-  /* min-width: 1255px; */
   width: 1600px; 
   height: 159px;
   position: fixed;  
@@ -95,8 +94,6 @@ nav>ul>li>a{
   margin-left: 45.5px;
   display: inline-block;
   padding-top: 49px;
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
 }
 
 nav>ul>li>a:hover{
@@ -130,7 +127,7 @@ background-position: -72px -9px;
 
 
 .promo{
-  background-image: url("../images/section-promo-background.png");
+  background-image: url("../images/section-promo-background.jpg");
   background-size: 100% 100%;
   /* width: 100%; */
   /* min-width: 1600px; */
@@ -142,13 +139,13 @@ background-position: -72px -9px;
 }
 
 h2{
+  line-height: 118px;
   font-size: 90px;
   font-family: "Yeseva One";
   color: white;
   width: 970px;
   text-align: center;
-  margin-top: 228px;
-  /* margin-right: 22px; */
+  margin-top: 214px;
   }
 
  h2 span{
@@ -162,16 +159,16 @@ h2{
 
 
  h2::after{
-   display: block;
-   content: url("../images/section-promo-content-divider.png");
-   margin-top: 6px;
-   margin-left: 6px;
+  display: block;
+  content: url("../images/section-promo-content-divider.png");
+  margin-top: -22px;
+  margin-left: 6px;
  } 
 
 
  .buttons-wrapper{
-   width: 500px;
-   margin-top: 19px;
+  width: 500px;
+  margin-top: 5px;
  }
 
  .section-promo-button{
@@ -192,7 +189,6 @@ h2{
  .section-promo-button:last-child{
   border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.5);
-  /* background-color: rgba(255, 255, 255, 0.4); */
   margin-left: 25px;
  }
  
@@ -212,8 +208,6 @@ h2{
 
 
 .about{
-  /* width: 100%; */
-  /* min-width: 1600px; */
   height: 710px;
 }
 
@@ -270,11 +264,8 @@ h2{
  .ingredients{
   background-image: url("../images/section-ingredients-background.png");
   background-size: 100%;
-  /* width: 100%; */
-  /* min-width: 1600px; */
   height: 758px;
-  
- }
+  }
 
 
  .ingredients .inner-container{
@@ -289,20 +280,19 @@ h2{
   background-color: rgba(0, 0, 0, 0.5);
   width: 570px;
   height: 557px;
-  margin-right: 40px;
+  margin-top: -1px;
+  margin-right: 41px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
  }
 
-
-
   .ingredients h3{
     font-family: 'Yeseva One';
     font-size: 36.4px;
     margin-top: 78.7px;
-    margin-left: -2.3px;
+    margin-left: -1.3px;
     letter-spacing: -0.3px;
   }
 
@@ -331,32 +321,29 @@ h2{
   width: 381px;
   display: flex;
   justify-content: space-between;
-
  }
 
  .ingredients figure{
   width: 99px;
   height: 99px;
-  /* border: 2px solid gray; */
   Box-shadow: 0px 0px 0px 5px rgba(109, 105, 102, 0.52);
   border-radius: 50%;
  }
 
  .ingredients figure:nth-child(1){
-  background-image: url("../images/section-ingredients-image1.png");
-  background-position: -46px -32px;
+  background-image: url(../images/section-ingredients-image1.jpg);
+  background-position: -45px -32px;
 }
 
 .ingredients figure:nth-child(2){
-  background-image: url(../images/section-ingredients-image2.png);
-  background-position: -44px -90px;
+  background-image: url(../images/section-ingredients-image2.jpg);
+  background-position: -43px -90px;
 }
 
-.ingredients figure:nth-child(3){
-  background-image: url("../images/section-ingredients-image3.png");
-  background-position: -46px -17px;
+.ingredients figure:nth-child(3) {
+  background-image: url(../images/section-ingredients-image3.jpg);
+  background-position: -45px -17px;
 }
-
 
 .menu{
   background-image: url("../images/pattern2.jpg");
@@ -383,7 +370,7 @@ h2{
 
   .menu h3::after{
     display: block;
-    content: url(../images/section-about-content-divider.png);
+    content: url("../images/section-about-content-divider.png");
     margin-top: 12px;
     position: relative;
     top: -1px;
@@ -425,10 +412,6 @@ h2{
     letter-spacing: 0.2px;
   }
 
-  /* .dish:nth-child(){
-    color:green;
-  } */
-
   .menu-item .dish~.dish{
     margin-top: 39px;
   }
@@ -442,10 +425,8 @@ h2{
   }
 
  .reviews{
-  background-image: url("../images/section-reviews-background.png");
+  background-image: url("../images/section-reviews-background.jpg");
   background-size: 100% 100%;
-  /* width: 100%; */
-  /* min-width: 1600px; */
   height: 758px;
   display: flex;
   align-items: center;
@@ -459,6 +440,7 @@ h2{
   flex-direction: column;
   align-items: center;
  }
+
  .reviews h3{
   text-align: center;
   font-family: 'Yeseva One';
@@ -469,7 +451,7 @@ h2{
 
  .reviews h3::after{
   display: block;
-  content: url(../images/section-ingredients&reviews-divider.png);
+  content: url("../images/section-ingredients&reviews-divider.png");
   margin-top: 12px;
   margin-left: 3px;
 } 
@@ -526,6 +508,7 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -3px;
 }
 
 .reservations-content h3{
@@ -540,7 +523,7 @@ h2{
     display: block;
     content: url("../images/section-about-content-divider.png");
     margin-top: 11px;
-    /* margin-left: 47px; */
+    margin-right: 2px;
   } 
 
 
@@ -554,6 +537,10 @@ h2{
     margin-left: 0px;
     letter-spacing: 0.09px;
   }  
+
+  .reservations-content p:last-child{
+    margin-top: 10px;
+  }
 
 footer{
   height: 320px;
@@ -616,12 +603,3 @@ footer p span{
 main{
   min-height: calc(100vh-320px);
 }
-  
-
-
-/* 
-.bg-header_social_icons {
-  width: 81px; height: 21px;
-  background: url('css_sprites.png') -10px -10px;
-} */
-
