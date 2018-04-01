@@ -363,9 +363,9 @@ h2{
 .menu .inner-container{
   position: relative;
   top: 5px;
+  right: 78px;
   display: flex;
-  justify-content: space-around;
-  width: 1200px;
+  width: 1049px;
   overflow: hidden;
   margin-right: 201px;
   height: 804px;
@@ -394,6 +394,11 @@ h2{
  align-items: center;
  margin-top: 2px;
 }
+
+.menu-column:nth-child(2){
+  margin-left: 146px;
+}
+
 
 .menu-column:first-child{
   position: relative;
