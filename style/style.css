@@ -395,7 +395,7 @@ h2{
  margin-top: 2px;
 }
 
-.menu-column:nth-child(2){
+.menu-column:nth-child(n+2){
   margin-left: 146px;
 }
 
