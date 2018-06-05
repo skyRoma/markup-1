@@ -1,0 +1,63 @@
+.promo {
+  background-image: url("../images/section-promo-background.jpg");
+  background-size: 100% 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  line-height: 118px;
+  font-size: 90px;
+  font-family: "Yeseva One", sans-serif;
+  color: white;
+  width: 970px;
+  text-align: center;
+  margin-top: 214px;
+}
+h2::after {
+  display: block;
+  content: url("../images/section-promo-content-divider.png");
+  margin-top: -22px;
+  margin-left: 6px;
+}
+h2 span {
+  display: inline-block;
+}
+h2 span:last-child {
+  margin-top: 28px;
+}
+.buttons-wrapper {
+  width: 500px;
+  margin-top: 5px;
+}
+.section-promo-button {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 18.5px 49.5px;
+  color: white;
+  font-family: "Lato Regular", sans-serif;
+  font-size: 18px;
+}
+.section-promo-button:first-child {
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 6px;
+}
+.section-promo-button:first-child:hover {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 6px;
+  cursor: pointer;
+}
+.section-promo-button:last-child {
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 25px;
+}
+.section-promo-button:last-child:hover {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 25px;
+  cursor: pointer;
+}

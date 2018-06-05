@@ -1,0 +1,112 @@
+footer {
+  height: 320px;
+  background-color: rgb(25,25,25);
+  
+  .footer-container {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  article {
+    width: 370px;
+    &:first-child {
+      h4::after{
+        margin-left: -2px;
+      }
+  
+      p {
+        height: 120px;
+        overflow: hidden;
+      }
+    }
+      
+    &:nth-child(n+2) {
+      h4, p {
+        margin-left: 2px;
+      }
+      h4::after {
+        margin-right: 1px;
+      }
+    }
+  }
+  
+  h4{
+    font-family: @headingFont, sans-serif;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    margin-top: 59px;
+  
+    &::after {
+      display: block;
+      content: url("../images/footer-divider.png");
+      margin-top: 17px;
+    }
+  }
+    
+  p{
+    margin-top: 14px;
+    line-height: 24px;
+    font-family: @formAndFooterFont, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+  
+    span {
+      font-family: @formAndFooterBoldFont, sans-serif;
+    }
+  }
+    
+  .footer-payments{
+    margin-left: 128px;
+    margin-top: 51px;
+  
+    a {
+      width: 29px;
+      height: 15px;
+      display: inline-block;
+      background: url(../images/footer-payments.png) no-repeat;
+  
+      &:nth-child(1) {
+        background-position: 1px 0px;
+      }
+      &:nth-child(2) {
+        background-position: -32px 0px;
+      }
+      &:nth-child(3) {
+        background-position: -65px 0px;
+      }
+      &:nth-child(4) {
+        background-position: -98px 0px;
+      }
+    }
+  }
+  
+  .footer-social-links{
+    margin-left: 145px;
+    margin-top: 50px;
+      
+    a {
+      width: 18px;
+      height: 16px;
+      display: inline-block;
+      background: url(../images/footer-social-links.png) no-repeat;
+      &:nth-child(1) {
+        background-position: 1px 0px;
+      }
+      &:nth-child(2) {
+        background-position: -21px 0px;
+      }
+      &:nth-child(3) {
+        background-position: -43px 0px;
+      }
+      &:nth-child(4) {
+        background-position: -65px 0px;
+        width: 22px;
+      }
+    }
+  }
+}
+  

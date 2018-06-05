@@ -1,0 +1,138 @@
+.reservations{
+  height: 710px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .inner-container{
+    height: 507px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+  
+.reservations-figure-wrapper{
+  margin-top: -2px;
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.reservations-content{
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -3px;
+  
+  h3{
+    text-align: center;
+    color: @h3GoldColor;
+    font-family: @headingFont, sans-serif;
+    font-size: 36.5px;
+    letter-spacing: -0.2px;
+  
+    &::after {
+      display: block;
+      content: url("../images/section-about-content-divider.png");
+      margin-top: 11px;
+      margin-right: 2px;
+    }
+  }
+  
+  article{
+    text-align: center;
+    overflow: hidden;
+    width: 430px;
+    height: 150px;
+    font-family: @mainFont, sans-serif;
+    font-size: 15.5px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-left: 0px;
+    letter-spacing: 0.09px;
+  }  
+  
+  p:last-child{
+    margin-top: 10px;
+  }
+}
+  
+.section-reviews-form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  align-items: center;
+}
+  
+.fieldset-input{
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.fieldset-column {
+  input+label {
+    margin-top: 27px;
+  }
+  
+  input:last-child {
+    height: 32px;
+    margin-top: 6px;
+    width: 185px;
+  }
+  
+  &:last-child input:last-child{
+    height: 32px;
+  }
+}
+   
+form {
+  label{
+    display: block;
+    color: #c9a131;
+    font-family: @formAndFooterBoldFont, sans-serif;
+    font-size: 14px;
+  }
+  input{
+    width: 185px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.41);
+    font-family: @formAndFooterFont, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: gray;
+    border: 1px solid #c8c6c6;
+    margin-top: 8px;
+    padding-left: 13px;
+    letter-spacing: -0.5px;
+  }
+}
+  
+label[for="party-number"]{
+  margin-left: -1px;
+}
+  
+input:focus{
+  outline: none;
+  border-color: #c9a131;
+}
+  
+form button{
+  background-color: #dbae30;
+  color: white;
+  width: 200px;
+  height: 36px;
+  margin-top: 33px;
+  margin-left: 1px;
+  font-family: @formAndFooterFont;
+  font-size: 16px;
+  padding-left: 9.5px;
+  border: 0px;
+  
+  &:hover {
+    background-color: #f9cd52; 
+    cursor: pointer;
+  }
+}

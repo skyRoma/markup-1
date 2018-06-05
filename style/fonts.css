@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("../fonts/yeseva-one/YesevaOne-Regular_v2.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Gentium Basic';
+  src: url("../fonts/Gentium-Basic/GenBkBasB.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Lato Regular';
+  src: url("../fonts/lato/Lato-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/open-sans/OpenSans-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans bold';
+  src: url("../fonts/open-sans/OpenSans-Bold.ttf") format('truetype');
+}

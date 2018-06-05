@@ -1,0 +1,83 @@
+.ingredients {
+  background-image: url("../images/section-ingredients-background.png");
+  background-size: 100%;
+  height: 758px;
+  
+  .inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 174px;
+    height: 100%;
+  }
+    
+  h3 {
+    font-family: @headingFont, sans-serif;
+    font-size: 36.4px;
+    margin-top: 78.7px;
+    margin-left: -1.3px;
+    letter-spacing: -0.3px;
+  
+    &::after {
+    display: block;
+    content: url(../images/section-ingredients&reviews-divider.png);
+    padding-top: 12.3px;
+    padding-left: 26.1px;
+    }
+  }
+    
+  article {
+    width: 418px;
+    font-family: @mainFont ,sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 18px;
+    line-height: 24px;
+    word-spacing: 0.6px;
+    letter-spacing: -0.3px;
+    height: 120px;
+    overflow: hidden;
+  }
+  
+  .figure-wrapper {
+    margin-top: 74px;
+    width: 381px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  figure {
+    width: 99px;
+    height: 99px;
+    Box-shadow: 0px 0px 0px 5px rgba(109, 105, 102, 0.32);
+    border-radius: 50%;
+  
+    &:nth-child(1) {
+      background-image: url(../images/section-ingredients-image1.jpg);
+      background-position: -45px -32px;
+    }
+  
+    &:nth-child(2){
+      background-image: url(../images/section-ingredients-image2.jpg);
+      background-position: -43px -90px;
+    }
+      
+    &:nth-child(3) {
+      background-image: url(../images/section-ingredients-image3.jpg);
+      background-position: -45px -17px;
+    }
+  }
+}
+  
+.ingredients-content-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 570px;
+  height: 557px;
+  margin-top: -1px;
+  margin-right: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+  

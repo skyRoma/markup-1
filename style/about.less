@@ -1,0 +1,54 @@
+.about{
+  height: 710px;
+  
+  .inner-container{
+    display: flex;
+    justify-content: center;
+  }
+}
+  
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 103px;
+  margin-left: 44px;
+  
+  h3{
+    color: @h3GoldColor;
+    font-family: @headingFont, sans-serif;
+    font-size: 36.5px;
+    letter-spacing: -0.2px;
+  
+    &::after {
+      display: block;
+      content: url("../images/section-about-content-divider.png");
+      margin-top: 11px;
+      margin-left: 47px; 
+    }
+  }
+    
+  article {
+    text-align: center;
+    width: 430px;
+    font-family: @mainFont, sans-serif;
+    font-size: 15.5px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-left: 0px;
+    letter-spacing: 0.09px;
+    height: 120px;
+    overflow: hidden;
+  
+    & + figure {
+      margin-top: 49px;
+      margin-left: 70.5px;
+    }
+  }
+    
+  & + figure {
+    display: inline-block;
+    margin-top: 55px;
+    margin-left: 24px;
+  }
+}
